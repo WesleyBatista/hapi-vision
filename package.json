@@ -1,0 +1,30 @@
+{
+  "name": "hapi-vision",
+  "version": "1.0.0",
+  "description": "Google Vision API + HapiJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WesleyBatista/hapi-vision.git"
+  },
+  "keywords": [
+    "vision",
+    "vision",
+    "google-cloud"
+  ],
+  "author": "WesleyBatista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WesleyBatista/hapi-vision/issues"
+  },
+  "homepage": "https://github.com/WesleyBatista/hapi-vision#readme",
+  "dependencies": {
+    "@google-cloud/vision": "^0.9.0",
+    "firebase": "^3.7.0",
+    "hapi": "^16.1.0"
+  }
+}
