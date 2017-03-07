@@ -10,6 +10,7 @@ server.connection({ port: process.env.PORT || 5002 });
 const PROJECT_ID = process.env.PROJECT_ID;
 const PROJECT_JSON_KEY = process.env.PROJECT_JSON_KEY;
 const PROJECT_BUCKET = process.env.PROJECT_BUCKET;
+const HAPI_MAX_UPLOAD_SIZE = process.env.HAPI_MAX_UPLOAD_SIZE;
 
 const CLIENT_CREDENTIALS = {
   projectId: PROJECT_ID,
@@ -44,7 +45,8 @@ server.route({
         payload: {
             output: 'stream',
             parse: true,
-            allow: 'multipart/form-data'
+            allow: 'multipart/form-data',
+            maxBytes: HAPI_MAX_UPLOAD_SIZE
         },
 
         handler: function (request, reply) {
